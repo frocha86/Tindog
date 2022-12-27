@@ -1,24 +1,41 @@
 body {
     font-family: "Montserrat";
 }
-#title {
-    background-color: #ff4c68;
-    color: white;
-    padding: 3% 0;  
-}
 .container-fluid {
-    padding: 0 15%;
+    padding: 3% 15% 7%;    
 }
 h1 {
-    font-weight: bold;
     font-size: 3.5rem;
+    font-weight: bold;
     line-height: 1.5;  
+}
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
 }
 h3 {
     font-weight: bold;
 }
 p {
     color: #8f8f8f;
+}
+/* Title section */
+#title {
+    background-color: #ff4c68;
+    color: white;
+    position: relative;  
+}
+@media (max-width: 991px) {
+    #title {
+        text-align: center;
+    }
+    .title-img {
+        left: 10%;
+        position: static;
+        transform: rotate(0deg);
+        width: 50%; 
+    }
 }
 /* Navigation Bar */
 .navbar {
@@ -41,19 +58,24 @@ p {
 .fa-brands {
     margin-right: 0.7rem;
 }
+.col-img {
+    position: relative
+}
 .title-img {
-    width: 60%;
+    position: absolute;
+    right: 30%;
     transform: rotate(25deg);
-    display: block;
-    margin: auto;
+    width: 50%;
 }
 /* Features */
 #features {
-    margin: 5% 0;
+    background-color: #fff;
+    padding: 7% 15%;
+    position: relative;  
 }
 .feature-box {
-    text-align: center;
     padding: 0 7%;
+    text-align: center;
 }
 .icon {
     color: #ef8172;
@@ -62,4 +84,54 @@ p {
 .icon:hover {
     color: #ff4c68;
     margin: 0 0 1rem;    
+}
+/* Testemonials Section*/
+#testimonials {
+    background-color: #ef8172;
+    color: #fff;
+    text-align: center;
+}
+.testimonial-img {
+    border-radius: 100%;
+    margin: 20px;
+    width: 10%;
+}
+.carousel-item {
+    padding: 7% 15%;
+}
+/* Press section */
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.press-logo {
+    margin: 20px 20px 50px;
+    width: 10%;
+}
+/* Price Section */
+#pricing {
+    padding: 5% 15%;
+    text-align: center;
+}
+.pricing-column {
+    padding: 3% 2%;
+}
+/* Call to Action section */
+#cta {
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: center;
+    padding: 3% 15%;
+}
+.download-btn-cta {
+    margin: 5% 1% 7%;
+}
+/* Footer section */
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+.sm-logo-footer {
+    margin-bottom: 3%;
 }
